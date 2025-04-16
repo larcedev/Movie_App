@@ -1,7 +1,9 @@
+
 import React, { useState } from "react";
+import MovieList from "./components/MovieList";
 
 const App = () =>{
-  const [movies, setMovies]= useState([      {
+  const [movies, setMovies]= useState([{
     "Title": "Star Wars: Episode IV - A New Hope",
     "Year": "1977",
     "imdbID": "tt0076759",
@@ -73,7 +75,7 @@ const App = () =>{
 }]);
  return 
  <div>
-  
+ <MovieList movies={movies} />
  </div>;
 };
 
